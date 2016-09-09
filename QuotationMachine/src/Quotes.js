@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Grid } from 'react-bootstrap';
 
-var data = [
+const data = [
 	{
 		"author": "Spock",
 		"content": "Live long and prosper."
@@ -19,7 +19,7 @@ class QuoteBox extends React.Component {
 				<p>
 					Hello, world! I am a QuoteBox.
 				</p>
-				<QuoteList/>
+				<QuoteList data={data}/>
 				<QuoteForm/>
 			</Grid>
 		);
@@ -29,13 +29,16 @@ class QuoteBox extends React.Component {
 
 class QuoteList extends React.Component {
 	render() {
+		const quoteNodes = this.props.data.map(function(quote) {
+			return (
+				<QuoteListEntry author={quote.author}>
+					{quote.content}
+				</QuoteListEntry>
+			);
+		})
 		return (
 			<div className="quoteList">
-				<p>
-					Gimme all your quotes.
-					<QuoteListEntry author="Someone">This is a comment</QuoteListEntry>
-					<QuoteListEntry author="Someone Else">This is a comment too</QuoteListEntry>
-				</p>
+				{quoteNodes}
 			</div>
 		);
 	}
@@ -46,8 +49,9 @@ class QuoteListEntry extends React.Component {
 		return (
 			<div className="quoteListEntry">
 				<h2 className="quoteAuthor">
-					Quote Author Here.
+					{this.props.author}
 				</h2>
+				{this.props.children}
 			</div>
 		);
 

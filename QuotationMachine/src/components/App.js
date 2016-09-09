@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap';
-import QuoteBox from './components/Quotes.js';
-import logo from './logo.svg';
+import QuoteBox from './Quotes.js';
+import logo from '../logo.svg';
 
 
-import './App.css';
+import '../css/App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 

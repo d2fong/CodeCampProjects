@@ -13,6 +13,9 @@ const data = [
 ];
 
 class QuoteBox extends React.Component {
+	getInitialState() {
+		return {data: []};
+	}
 	render() {
 		return (
 			<Grid className="quoteBox">
@@ -71,5 +74,3 @@ class QuoteForm extends React.Component {
 
 
 export default QuoteBox;
-// export const QuoteList
-// export const QuoteListEntry;

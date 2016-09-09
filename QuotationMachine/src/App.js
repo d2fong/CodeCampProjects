@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap';
-import QuoteBox from './Quotes.js';
+import QuoteBox from './components/Quotes.js';
 import logo from './logo.svg';
 
 

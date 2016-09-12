@@ -9,6 +9,7 @@ export const TWEET_QUOTE = 'TWEET_QUOTE'
 export const VisibilityFilters = {
 	SHOW_ALL: 'SHOW_ALL',
 	SHOW_TWEETED: 'SHOW_TWEETED',
+	SHOW_UNTWEETED: 'SHOW_UNTWEETED'
 }
 
 // Action creators

@@ -44,9 +44,9 @@ export function visibilityFilter(state = SHOW_ALL, action) {
 }
 
 
-const quoteReducer = combineReducers({
+const quoteAppReducer = combineReducers({
 	visibilityFilter,
 	quotes
 })
 
-export default quoteReducer
+export default quoteAppReducer

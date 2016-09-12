@@ -4,13 +4,15 @@ describe('actions', () => {
 	it('should create an action to add a quote', () => {
 		const quote = {
 			"author": "Spock",
-			"content": "Live long and prosper."
+			"content": "Live long and prosper.",
+			"id": 0
 		}
 		const expectedAction = {
 			type: actions.ADD_QUOTE,
 			quote: {
 				"author": "Spock",
-				"content": "Live long and prosper."
+				"content": "Live long and prosper.",
+				"id": 0
 			}
 		}
 

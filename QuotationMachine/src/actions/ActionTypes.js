@@ -13,7 +13,9 @@ export const VisibilityFilters = {
 
 // Action creators
 
+let nextQuoteId = 0
 export function addQuote(quote) {
+	quote.id = nextQuoteId++
 	return {
 		type: ADD_QUOTE,
 		quote: quote

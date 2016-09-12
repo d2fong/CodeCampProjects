@@ -4,11 +4,15 @@ import { Button, Grid } from 'react-bootstrap';
 const data = [
 	{
 		"author": "Spock",
-		"content": "Live long and prosper."
+		"content": "Live long and prosper.",
+		"tweeted": true,
+		"id": 0
 	},
 	{
 		"author": "Mark Twain",
-		"content": "Courage is not the absence of fear. Courage is the mastery of fear."
+		"content": "Courage is not the absence of fear. Courage is the mastery of fear.",
+		"tweeted": true,
+		"id": 1
 	}
 ];
 
